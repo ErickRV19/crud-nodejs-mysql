@@ -1,0 +1,63 @@
+<% include partials/_header %>
+
+<nav class="navbar navbar-expand-lg navbar-dark ">
+    <a class="navbar-brand" href="#">Sistema de proveedores</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+<div class="navbar-nav">
+<a class="nav-item nav-link active" href="/">Bienvenido <span class="sr-only">(current)</span></a>
+<a class="nav-item nav-link" href="">Politicas</a>
+<a class="nav-item nav-link" href="/Portafolio/index.html">Desarrollador</a>
+</div>
+</div>
+</nav>
+
+<section class="principal">
+  <div class="fondo">
+      <img class="hero-image" src="../Img/fonf.bmp" width="700" height="605" alt="imagen principal del sitio"> 
+    </div>
+<div class="container-fluid">
+  <div class="row no-gutter">
+    <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image"></div>
+    <div class="">
+      <div class="login d-flex align-items-center py-5" id="contenedor">
+        <div class="container">
+          <div class="row">
+              <div class="col-md-9 col-lg-8 mx-auto">
+              <h1 class="login-heading mb-4">Bienvenido al sistema de proveedores</h1>
+              <form action="/add" method="post">
+
+                <div class="form-label-group">
+                  <input type="text" id="inputEmail" name="idUsuario" class="form-control" placeholder="idUsuario" required autofocus>
+                </div>
+                <p></p>
+
+                <div class="form-label-group">
+                  <input type="password" id="inputPassword" class="form-control" name="password" placeholder="Contraseña" required>
+                </div>
+                <p></p>
+
+                <button class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2"  onclick="location.href='/dashBoard'" type="submit">Ingresar</button>
+                <div class="text-center">
+                  
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</section>
+
+
+
+
+<% include partials/_footer %>
+
+
+
+
