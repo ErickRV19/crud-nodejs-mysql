@@ -1,0 +1,36 @@
+<% include partials/_header %>
+
+<table class="table table-bordered table-hover">
+  <thead>
+    <tr>
+      <th>Id Productos</th>
+      <th>Nombre producto</th>
+      <th>Cantidad Existente</th>
+      <th>Precio</th>
+      <th>Id Proveedores</th>
+      <th>Accion</th>
+    </tr>
+  </thead>
+  <tbody>
+      <% if (datas) { %>
+        <% for(var i = 0; i < datas.length; i++) { %>
+          <tr>
+              
+            <td><%= datas[i].idProductos %></td>
+            <td><%= datas[i].nombre_producto %></td>
+            <td><%= datas[i].cantidadExistente %></td>
+            <td><%= datas[i].precio %></td>
+            <td><%= datas[i].idProveedores %></td>
+            <td>
+              <a href="/update/<%= datas[i].idProveedores %>" class="btn btn-info">Edit</a>
+              <a href="/delete/<%= datas[i].idProveedores %>" class="btn btn-danger">Delete</a>
+            </td>
+          </tr>
+        <% } %>
+      <% } %>
+   
+  </tbody>
+</table>
+
+
+<% include partials/_footer %>

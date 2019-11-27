@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
+
+body {
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+/* Toggle Styles */
+
+#viewport {
+  padding-left: 250px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#content {
+  width: 100%;
+  position: relative;
+  margin-right: 0;
+}
+
+/* Sidebar Styles */
+
+#sidebar {
+  z-index: 1000;
+  position: fixed;
+  left: 250px;
+  width: 250px;
+  height: 100%;
+  margin-left: -250px;
+  overflow-y: auto;
+  background: rgb(27, 58, 117);
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#sidebar header {
+  background-color: rgb(27, 58, 117);
+  font-size: 20px;
+  line-height: 52px;
+  text-align: center;
+}
+
+#sidebar header a {
+  padding-top:20px ;
+  color: #fff;
+  display: block;
+  text-decoration: none;
+  font-size: 29px;
+}
+
+#sidebar header a:hover {
+  color: #fff;
+}
+
+
+#sidebar .nav a{
+  background: none;
+  color: #fff;
+  font-size: 22px;
+  padding: 26px 44px;
+}
+
+
+#sidebar .nav a:hover{
+  background: #fff;
+color: rgb(27, 58, 117) ;
+}
+h3{
+  color: #fff;
+}
+
+#sidebar .nav a i{
+  margin-right: 16px;
+}
+
+
+main.container {
+	display: table;
+	width: 100%;
+	margin-top: -50px;
+	padding: 0;
+	/*set left/right padding according to needs*/
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+main .row {
+	height: 100%;
+	display: table-row;
+}
+
+main .sidebar {
+	display: table-cell;
+	width: 200px;
+  padding-top: 70px;
+  padding-left: 50px;
+}
+
+main .content {
+	display: table-cell;
+	vertical-align: top;
+	padding-left: 10px;
+	padding-top: 30px;
+}
+
+/* Fin de los estilos de menu lateral */
+
+
+/* inicio estilos contenido */
+
+div .contenido{
+  padding: 0px,30px;
+  background-color: #EAEEF1;
+}
+
+div .contenido .secinicio{
+}
+div .contenido .secproveedores{
+  padding-top: 700px;
+}
+div .contenido .secproductos{
+  padding-top: 700px;
+}
+div .contenido .secpedido{
+  padding-top: 700px;
+  padding-bottom: 300px;
+}
+div .headerCont{
+  display: block;
+  padding: 80px 20px 10px 30px;
+  background-color: #fff;
+  border: 100px;
+  color: black;
+}
+
+.headerCont #inicio{
+  color: #0D47A1;
+}
+
+.custom-btn{
+  padding: 10px 10px;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #0D47A1;
+  border-radius: 600px;
+
+}
+.botones{
+  text-align: right;
+}
+
+div .descripcion{
+  display: flex;
+justify-content: center;
+border: 0px;
+
+}
+
+div .Conteninicio{
+
+  padding: 90px;
+  background-color: #fff;
+  color: black;
+  margin: 30px;
+
+}
+
+
+div .btn-inicio{
+  background: transparent;
+  border-color: transparent;
+}
+
+.contenido .subtitle{
+  color: #0D47A1;
+}
+
+.secproveedores{
+  padding: 90px;
+  background-color: #fff;
+  margin: 30px;
+}
+
+.form-group .form-control{
+  padding: 10px;
+}
+
+.secproductos{
+  padding: 90px;
+  background-color: #fff;
+  margin: 30px;
+}
+
+.secpedido{
+  padding: 90px;
+  background-color: #fff;
+  margin: 30px;
+}
