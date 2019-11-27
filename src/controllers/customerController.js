@@ -127,5 +127,13 @@ controller.delete = (req, res) => {
     });
   });
 }
+controller.deleteProductos = (req, res) => {
+  const { idProveedores } = req.params;
+  req.getConnection((err, connection) => {
+    connection.query('DELETE FROM tb_Productos WHERE idProveedores = ?', [idProveedores], (err, rows) => {
+      res.redirect('/');
+    });
+  });
+}
 
 module.exports = controller;
