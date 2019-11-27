@@ -10,7 +10,9 @@ router.get('/listaProductos', customerController.listaProductos);
 router.post('/add', customerController.save);
 router.get('/update/:idProveedores', customerController.edit);
 router.post('/update/:idProveedores', customerController.update);
+
 router.get('/delete/:idProveedores', customerController.delete);
+router.get('/deleteproductos/:idProveedores', customerController.deleteProductos);
 
 router.post('/add', customerController.guardar);
 router.post('/addDireccion', customerController.guardarDireccion);
@@ -20,6 +22,16 @@ router.post('/addProducto', customerController.guardarProducto);
 router.post('/addPedido', customerController.guardarPedido);
 
 
+
+router.get('/dashBoard',(req, res)=>{
+    res.render('./customers');
+    });
+    
+    
+    router.get('/inicio',(req, res)=>{
+        res.render('./usuarios');
+        });
+        
 
 
 
