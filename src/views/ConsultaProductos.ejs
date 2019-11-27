@@ -1,5 +1,18 @@
 <% include partials/_header %>
 
+<nav class="navbar navbar-expand-lg navbar-dark ">
+    <a class="navbar-brand" href="#">Sistema de proveedores</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+<div class="navbar-nav">
+
+</div>
+</div>
+</nav>
+
+
 <table class="table table-bordered table-hover">
   <thead>
     <tr>
@@ -23,7 +36,7 @@
             <td><%= datas[i].idProveedores %></td>
             <td>
               <a href="/update/<%= datas[i].idProveedores %>" class="btn btn-info">Edit</a>
-              <a href="/delete/<%= datas[i].idProveedores %>" class="btn btn-danger">Delete</a>
+              <a href="/deleteproductos/<%= datas[i].idProveedores %>" class="btn btn-danger">Delete</a>
             </td>
           </tr>
         <% } %>
