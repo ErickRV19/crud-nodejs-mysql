@@ -134,6 +134,56 @@ controller.update = (req, res) => {
 };
 
 
+controller.editproductos = (req, res) => {
+  const { idProductos } = req.params;
+  req.getConnection((err, conn) => {
+    conn.query("SELECT * FROM tb_Productos WHERE idProductos = ?", [idProductos], (err, rows) => {
+      res.render('productos_edit', {
+        datas: rows[0]
+      })
+    });
+  });
+};
+
+controller.updateproductos = (req, res) => {
+  const { idProductos } = req.params;
+  const newCustomer = req.body;
+  req.getConnection((err, conn) => {
+
+  conn.query('UPDATE tb_Productos set ? where idProductos = ?', [newCustomer, idProductos], (err, rows) => {
+    res.redirect('/');
+  });
+  });
+};
+
+controller.editpedidos = (req, res) => {
+  const { idPedido } = req.params;
+  req.getConnection((err, conn) => {
+    conn.query("SELECT * FROM tb_Pedidos WHERE idPedido = ?", [idPedido], (err, rows) => {
+      res.render('pedidos_edit', {
+        datapedido: rows[0]
+      })
+    });
+  });
+};
+
+controller.updatepedidos = (req, res) => {
+  const { idPedido } = req.params;
+  const newCustomer = req.body;
+  req.getConnection((err, conn) => {
+
+  conn.query('UPDATE tb_Pedidos set ? where idPedido = ?', [newCustomer, idPedido], (err, rows) => {
+    res.redirect('/');
+  });
+  });
+};
+
+
+
+
+
+
+
 
 
 

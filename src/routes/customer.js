@@ -11,6 +11,11 @@ router.get('/listaPedidos', customerController.listaPedidos);
 router.post('/add', customerController.save);
 router.get('/update/:idProveedores', customerController.edit);
 router.post('/update/:idProveedores', customerController.update);
+router.get('/updateproductos/:idProductos', customerController.editproductos);
+router.post('/updateproductos/:idProductos', customerController.updateproductos);
+router.get('/updatepedidos/:idPedido', customerController.editpedidos);
+router.post('/updatepedidos/:idPedido', customerController.updatepedidos);
+
 
 router.get('/delete/:idProveedores', customerController.delete);
 router.get('/deleteproductos/:idProductos', customerController.deleteProductos);
