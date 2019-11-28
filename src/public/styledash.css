@@ -219,3 +219,11 @@ div .btn-inicio{
   padding-bottom: 30px;
 
 }
+#btn-color{
+  background-color: purple;
+  color: #fff;
+}
+#btn-color1{
+  background-color: orange;
+  color: #fff;
+}

@@ -146,7 +146,7 @@
                                          </div>
                                          
                                         </div>
-                                        <button type="submit" class="btn btn-primary"  >Registrar direccion</button>
+                                        <button type="submit" class="btn" id="btn-color" >Registrar direccion</button>
 
                                         <p></p>
                                  </form>
@@ -178,7 +178,7 @@
                                                   </div>
                                             
                                     </div>
-                                    <button type="submit" class="btn btn-warning"   >Registrar responsable</button>
+                                    <button type="submit" class="btn " id="btn-color1"   >Registrar responsable</button>
                                     <p></p>
                                     </form>
 
@@ -285,24 +285,13 @@
                                    
                                   </div>
                                   <button type="submit" class="btn btn-success"  >Registrar Producto</button>
-
+                                  <a onclick="location.href='/ConsultaProductos'" href="/listaProductos" type="sumit" class="btn btn-warning">Consultar</a>
                                   <p></p>
                            </form>
-                           <form action="" method="">
-
-                            <h2 class="subtitle"   id="proveedores">Productoss</h2>
-                          <h6>Aqui podras consultar, editar y eliminar datos de los productos</h6>
-                          <a onclick="location.href='/ConsultaProductos'" href="/listaProductos" type="sumit" class="btn btn-info">Consultar</a>
-                         
-                          
-              
-                        
+                           <form action="" method=""> 
                       </section>
 
                           </form>
-                          
-
-                    
                         </section>
                     
                         <section class="secpedido">
@@ -342,14 +331,12 @@
                                    
                                   </div>
                                   <button type="submit" class="btn btn-success"  >Registrar pedido</button>
-
+                                  <a onclick="location.href='/ConsultaPedidos'" href="/listaPedidos" type="sumit" class="btn btn-warning">Consultar</a>
                                   <p></p>
 
                            </form>
                        
-                           <h2 class="subtitle"   id="proveedores">Pedidos</h2>
-                           <h6>Aqui podras consultar, editar y eliminar datos de los pedidos</h6>
-                           <a onclick="location.href='/ConsultaPedidos'" href="/listaPedidos" type="sumit" class="btn btn-info">Consultar</a>
+                         
                           
                         </section>
                 </div>

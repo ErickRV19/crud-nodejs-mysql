@@ -19,3 +19,7 @@ div .container{
     background-color: #0D47A1;
 }
 
+#btn-regresar{
+    background-color: purple;
+    color: #fff;
+  }
