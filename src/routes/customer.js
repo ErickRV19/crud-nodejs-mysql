@@ -5,6 +5,7 @@ const customerController = require('../controllers/customerController');
 
 router.get('/', customerController.listaProveedores);
 router.get('/listaProductos', customerController.listaProductos);
+router.get('/listaPedidos', customerController.listaPedidos);
 
 
 router.post('/add', customerController.save);
@@ -12,7 +13,8 @@ router.get('/update/:idProveedores', customerController.edit);
 router.post('/update/:idProveedores', customerController.update);
 
 router.get('/delete/:idProveedores', customerController.delete);
-router.get('/deleteproductos/:idProveedores', customerController.deleteProductos);
+router.get('/deleteproductos/:idProductos', customerController.deleteProductos);
+router.get('/deletePedidos/:idPedido', customerController.deletePedidos);
 
 router.post('/add', customerController.guardar);
 router.post('/addDireccion', customerController.guardarDireccion);
