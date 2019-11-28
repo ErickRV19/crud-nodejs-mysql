@@ -28,6 +28,20 @@ controller.listaProductos = (req, res) => {
 
 
 
+controller.listaPedidos = (req, res) => {
+  
+  const { idPedido } = req.params;
+  req.getConnection((err, conn) => {
+    conn.query('SELECT * FROM  tb_Pedidos', [idPedido], (err, rows) => {
+      res.render('ConsultaPedidos', {
+        datapedido: rows
+      })
+    });
+  });
+};
+
+
+
 
 controller.guardar=(req, res) =>{
   const data =req.body;
@@ -119,6 +133,11 @@ controller.update = (req, res) => {
   });
 };
 
+
+
+
+
+
 controller.delete = (req, res) => {
   const { idProveedores } = req.params;
   req.getConnection((err, connection) => {
@@ -128,10 +147,19 @@ controller.delete = (req, res) => {
   });
 }
 controller.deleteProductos = (req, res) => {
-  const { idProveedores } = req.params;
+  const { idProductos } = req.params;
   req.getConnection((err, connection) => {
-    connection.query('DELETE FROM tb_Productos WHERE idProveedores = ?', [idProveedores], (err, rows) => {
-      res.redirect('/');
+    connection.query('DELETE FROM tb_Productos WHERE idProductos = ?', [idProductos], (err, rows) => {
+      res.redirect('/listaProductos');
+    });
+  });
+}
+
+controller.deletePedidos = (req, res) => {
+  const { idPedido } = req.params;
+  req.getConnection((err, connection) => {
+    connection.query('DELETE FROM tb_Pedidos WHERE idPedido = ?', [idPedido], (err, rows) => {
+      res.redirect('/listaPedidos');
     });
   });
 }
