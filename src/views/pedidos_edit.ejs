@@ -1,0 +1,51 @@
+<% include partials/_header %>
+
+
+<nav class="navbar navbar-expand-lg navbar-dark ">
+  <a class="navbar-brand" href="#">Sistema de proveedores</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+<div class="navbar-nav">
+
+</div>
+</div>
+</nav>
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-5 offset-md-3 card">
+      <div class="card-body">
+        <form action="/updatepedidos/<%= datapedido.idPedido %>" method="POST">
+          
+          <div class="form-group">
+            <input type="text" name="idPedido" value="<%= datapedido.idPedido%>" placeholder="Pedido789" class="form-control">
+          </div>
+          <div class="form-group">
+            <input type="text" name="iva" value="<%= datapedido.iva%>" placeholder="$$" class="form-control">
+          </div>
+          <div class="form-group">
+              <input type="text" name="costo" value="<%= datapedido.costo%>" placeholder="$$$$" class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="text" name="fechaEntrega" value="<%= datapedido.fechaEntrega%>" placeholder="dd/mm/yyyy" class="form-control">
+              </div>
+              <div class="form-group">
+                  <input type="text" name="fechaPedido" value="<%= datapedido.fechaPedido%>" placeholder="dd/mm/yyyy" class="form-control">
+                </div>
+                <div class="form-group">
+                  <input type="text" name="contidadPedido" value="<%= datapedido.contidadPedido%>" placeholder="En piezas" class="form-control">
+                </div>
+  
+
+          <button type="submit" class="btn btn-primary">
+            save customer
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% include partials/_footer %>
