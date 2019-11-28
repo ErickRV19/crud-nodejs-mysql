@@ -1,0 +1,53 @@
+<% include partials/_header %>
+
+<nav class="navbar navbar-expand-lg navbar-dark ">
+    <a class="navbar-brand" href="#">Sistema de proveedores</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+<div class="navbar-nav">
+
+</div>
+</div>
+</nav>
+
+
+<table class="table table-bordered table-hover">
+  <thead>
+    <tr>
+        <th>Id Pedido</th>
+        <th>Iva</th>
+        <th>Costo</th>
+        <th>Fecha Entrega</th>
+        <th>Fecha Pedido</th>
+        <th>ContidadPedido</th>
+        <th>Id Productos</th>
+        <th>Accion</th>
+    </tr>
+  </thead>
+  <tbody>
+      <% if (datapedido) { %>
+        <% for(var i = 0; i < datapedido.length; i++) { %>
+          <tr>
+              
+            <td><%= datapedido[i].idPedido %></td>
+            <td><%= datapedido[i].iva %></td>
+            <td><%= datapedido[i].costo %></td>
+            <td><%= datapedido[i].fechaEntrega %></td>
+            <td><%= datapedido[i].fechaPedido %></td>
+            <td><%= datapedido[i].contidadPedido %></td>
+            <td><%= datapedido[i].idProductos %></td>
+            <td>
+              <a href="/update/<%= datapedido[i].idPedido %>" class="btn btn-info">Editar</a>
+              <a href="/deletePedidos/<%= datapedido[i].idPedido %>" class="btn btn-danger">Eliminar</a>
+            </td>
+          </tr>
+        <% } %>
+      <% } %>
+   
+  </tbody>
+</table>
+
+
+<% include partials/_footer %>
