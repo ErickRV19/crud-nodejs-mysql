@@ -122,13 +122,13 @@ div .contenido{
 div .contenido .secinicio{
 }
 div .contenido .secproveedores{
-  padding-top: 700px;
+  padding-top: 100px;
 }
 div .contenido .secproductos{
-  padding-top: 700px;
+  padding-top: 100px;
 }
 div .contenido .secpedido{
-  padding-top: 700px;
+  padding-top: 100px;
   padding-bottom: 300px;
 }
 div .headerCont{
@@ -136,20 +136,19 @@ div .headerCont{
   padding: 80px 20px 10px 30px;
   background-color: #fff;
   border: 100px;
-  color: black;
+
 }
 
 .headerCont #inicio{
+  display: inline;
   color: #0D47A1;
+  padding-bottom: 20px;
 }
 
 .custom-btn{
   padding: 10px 10px;
   font-size: 16px;
-  color: #ffffff;
-  background-color: #0D47A1;
   border-radius: 600px;
-
 }
 .botones{
   text-align: right;
@@ -157,17 +156,17 @@ div .headerCont{
 
 div .descripcion{
   display: flex;
-justify-content: center;
-border: 0px;
+justify-content:space-between ;
 
 }
 
 div .Conteninicio{
-
-  padding: 90px;
+  display: inline-block;
+  padding: 50px;
   background-color: #fff;
   color: black;
   margin: 30px;
+  text-align: center;
 
 }
 
@@ -194,11 +193,29 @@ div .btn-inicio{
 .secproductos{
   padding: 90px;
   background-color: #fff;
-  margin: 30px;
+  margin: 100px 30px;
 }
 
 .secpedido{
   padding: 90px;
   background-color: #fff;
-  margin: 30px;
+  margin: 30px 30px;
+}
+
+#Proveedores-direccion{
+  padding-bottom: 70px;
+  padding-top: 20px;
+}
+#Proveedores-responsable{
+  padding-bottom: 70px;
+
+}
+#Proveedores-registro{
+  padding-bottom: 80px;
+
+}
+
+#Consulta-proveedores{
+  padding-bottom: 30px;
+
 }

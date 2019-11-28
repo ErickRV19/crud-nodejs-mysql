@@ -21,7 +21,7 @@
                                 <div class="sidebar text-center">
                                     <img src="/Img/user.png" class="img-circle">
                                     <p></p>
-                                    <h3>User Name</h3>
+                                    <h3>Administrador</h3>
                                 </div>
                                 <div class="content">
                                     </p>
@@ -59,11 +59,12 @@
                                         <h5>
                                             <small class="text-muted"> Aqui podras hacer consultas, modificaciones , eliminar y registrar datos de la empresa</small>
                                         </h5>
+                                        <div class="botones">
+                                          <button type="button" onclick="location.href='/inicio'"class="custom-btn btn-danger">Cerrar Sesion</button>
+                                          <button type="button" class="custom-btn btn-success">Añadir usuario</button>
+                                  </div>
                                 </div>
-                                <div class="botones">
-                                        <button type="button" onclick="location.href='/inicio'"class="custom-btn btn-primary">Cerrar Sesion</button>
-                                        <button type="button" class="custom-btn btn-primary">Añadir usuario</button>
-                                </div>
+                                
                                 <p></p>
                                 <p></p>
                                 <div class="descripcion">
@@ -78,17 +79,17 @@
                                             </div>
                                             <div class="Conteninicio">
                                                     <button type="button" class="btn-inicio"  onclick="location.href='#productos'"  >
-                                                            <img src="./Img/proveedor.png" />
+                                                            <img src="./Img/producto.png" />
                                                     </button>
-                                                    <h5>Proveedores</h5>
-                                                    <h6><small  class="text-muted">  Aqui podras controlar los proveedores de la empresa como su nombre , numero etc. </small> </h6>
+                                                    <h5>Productos</h5>
+                                                    <h6><small  class="text-muted">  Aqui podras controlar los productos que los proveedores entregaran como su nombre etc. </small> </h6>
                                             </div>
                                             <div class="Conteninicio">
                                                     <button type="button" class="btn-inicio"  onclick="location.href='#pedidos'"  >
-                                                            <img src="./Img/proveedor.png" />
+                                                            <img src="./Img/pedido.png" />
                                                     </button>
-                                                    <h5>Proveedores</h5>
-                                                    <h6><small  class="text-muted">  Aqui podras controlar los proveedores de la empresa como su nombre , numero etc. </small> </h6>
+                                                    <h5>Pedidos</h5>
+                                                    <h6><small  class="text-muted">  Aqui podras controlar los pedidos que haran los proveedores de los productos. </small> </h6>
                                             </div>
                                 </div>
                                     
@@ -99,9 +100,11 @@
                         
                         <section class="secproveedores">
                             <h2 class="subtitle"   id="proveedores">Proveedores</h2>
+                            <p></p>
+                            <h4 class="subtitle"   id="proveedores">Registro del domicilio fiscal de los proveedores</h4>
                             <h6>Deberas ingresar primero el domicilio de la empresa</h6>
                             <p></p>
-                                <form action="/addDireccion" method="post">
+                                <form id="Proveedores-direccion" action="/addDireccion" method="post">
                                         <div class="form-row">
                                           <div class="form-group col-md-6">
                                             <label for="inputEmail4">Id Domicilio</label>
@@ -116,6 +119,8 @@
                                                   <option>Ciudad de mexico</option>
                                                   <option>Queretaro</option>
                                                   <option>Puebla</option>
+                                                  <option>Michoacan</option>
+                                                  <option>Nuevo leon</option>
                                                   
                                                 </select> 
                                               </div>
@@ -149,7 +154,8 @@
 
 
 
-                             <form action="/addResponsable" method="post">
+                             <form id="Proveedores-responsable" action="/addResponsable" method="post">
+                              <h4 class="subtitle"   id="proveedores">Registro de responsables</h4>
                                     <h6>Deberas ingresar un responsable de la empresa la empresa</h6>
                                     <div class="form-row">
                                                                 
@@ -176,7 +182,8 @@
                                     <p></p>
                                     </form>
 
-                                    <form action="/addProveedor" method="POST">
+                                    <form  id="Proveedores-registro" action="/addProveedor" method="POST">
+                                      <h4 class="subtitle"   id="proveedores">Registro de Proveedores</h4>
                                             <h6>Datos del proveedor (empresa)</h6>
                                             <div class="form-row">
                                                
@@ -208,7 +215,7 @@
                                     <p></p>
                                         
                             </form>
-                            <form action="" >
+                            <form id="Consulta-proveedores">
 
                               <h2 class="subtitle"   id="proveedores">Proveedores</h2>
                             <h6>Aqui podras consultar, editar y eliminar datos de los proveedores</h6>
