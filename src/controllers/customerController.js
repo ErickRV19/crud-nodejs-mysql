@@ -54,7 +54,6 @@ controller.guardar=(req, res) =>{
 
 
 controller.guardarDireccion=(req, res) =>{
-  res.send("paso direccion");
   const datadirec =req.body;
   req.getConnection((err,conn)=>{
       conn.query('INSERT INTO tb_domicilio set ? ', [datadirec] , (err,customer) =>{
@@ -63,7 +62,6 @@ controller.guardarDireccion=(req, res) =>{
 };
 
 controller.guardarResponsable=(req, res) =>{
-  res.send("paso responsable");
   const datarespon =req.body;
   req.getConnection((err,conn)=>{
       conn.query('INSERT INTO tb_Responsable set ? ', [datarespon] , (err,customer) =>{
@@ -72,7 +70,6 @@ controller.guardarResponsable=(req, res) =>{
 };
 
 controller.guardarProveedor=(req, res) =>{
-  res.send("paso proveedor");
   const dataprovee =req.body;
   req.getConnection((err,conn)=>{
       conn.query('INSERT INTO tb_Proveedores set ? ', [dataprovee] , (err,customer) =>{
@@ -81,7 +78,7 @@ controller.guardarProveedor=(req, res) =>{
 };
 
 controller.guardarProducto=(req, res) =>{
-  res.send("paso proveedor");
+
   const dataprodcuto =req.body;
   req.getConnection((err,conn)=>{
       conn.query('INSERT INTO tb_Productos set ? ', [dataprodcuto] , (err,customer) =>{
@@ -89,7 +86,6 @@ controller.guardarProducto=(req, res) =>{
   });
 };
 controller.guardarPedido=(req, res) =>{
-  res.send("paso proveedor");
   const datapedido =req.body;
   req.getConnection((err,conn)=>{
       conn.query('INSERT INTO tb_Pedidos set ? ', [datapedido] , (err,customer) =>{
