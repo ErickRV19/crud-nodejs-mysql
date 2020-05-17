@@ -3,10 +3,11 @@
 # CRUD Nodejs y Mysql
 
 Pagina web la cual ayuda a un el control de proveedores, manejo de productos empleados y  transporte con las funciones CRUD usa nodeJS conectada a una base de datos.
-[Node Js](https://nodejs.org/es/ "Nodejs "Node Js")
+
 <h5> Tecnologias y librearias que se utilizo:</h5>
+
 [Expressjs](https://expressjs.com/es/ "Expressjs")
-[Nodejs](https://nodejs.org/es/ "Nodejs")
+[Nodejs](https://nodejs.org/es/ "Node js")
 [Bootstrap](https://getbootstrap.com/ "Bootstrap")
 [Mysql](https://www.mysql.com/ "Mysql")
 [Morgan](https://www.npmjs.com/package/morgan "Morgan")
