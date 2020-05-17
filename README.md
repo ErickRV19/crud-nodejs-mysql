@@ -26,7 +26,5 @@ Pantalla de alta de los proveedores
 ![Preview](https://raw.githubusercontent.com/ErickRV19/crud-nodejs-mysql/master/previews/Screenshot_2020-05-08%20Nodejs%20Mysql%20CRUD4.png "Preview")
 
 
-[https://nodejs.org/es/ "Nodejs]: https://nodejs.org/es/ "Nodejs "node"
-
 # Usefull Commands
 - to init mysql: `mysql -u root -p`
