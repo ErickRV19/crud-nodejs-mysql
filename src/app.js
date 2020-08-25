@@ -10,7 +10,7 @@ const app = express();
 const customerRoutes = require('./routes/customer');
 
 // settings
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT || 3001);
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
@@ -21,7 +21,7 @@ app.use(myConnection(mysql, {
   user: 'root',
   password: 'Abc123-E',
   port: 3306,
-  database: 'db_controlproveedoresbeta'
+  database: 'db_ControlProveedoresbeta'
 }, 'single'));
 app.use(express.urlencoded({extended: false}));
 
